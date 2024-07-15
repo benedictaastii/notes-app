@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App | Benedikta Asti Daeli</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Catatan Pribadi</h1>
+      <search-bar></search-bar>
+    </header>
+
+    <main>
+      <add-note-form max-char="50"></add-note-form>
+
+      <section id="activeNotes">
+        <h2>Catatan Aktif</h2>
+        <note-list></note-list>
+      </section>
+
+      <section id="archivedNotes">
+        <h2>Catatan Arsip</h2>
+        <note-list></note-list>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 Benedikta Asti Daeli</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
